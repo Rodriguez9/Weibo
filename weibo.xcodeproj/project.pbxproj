@@ -12,6 +12,16 @@
 		27FC102421BD5E72004DE2B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FC102221BD5E72004DE2B0 /* Main.storyboard */; };
 		27FC102621BD5E72004DE2B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FC102521BD5E72004DE2B0 /* Assets.xcassets */; };
 		27FC102921BD5E72004DE2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FC102721BD5E72004DE2B0 /* LaunchScreen.storyboard */; };
+		27FC103521BD65F2004DE2B0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC103321BD65F2004DE2B0 /* HomeViewController.swift */; };
+		27FC103621BD65F2004DE2B0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FC103421BD65F2004DE2B0 /* HomeViewController.xib */; };
+		27FC103C21BD6635004DE2B0 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC103A21BD6635004DE2B0 /* MessageViewController.swift */; };
+		27FC103D21BD6635004DE2B0 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FC103B21BD6635004DE2B0 /* MessageViewController.xib */; };
+		27FC104121BD664F004DE2B0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC103F21BD664F004DE2B0 /* MainViewController.swift */; };
+		27FC104221BD664F004DE2B0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FC104021BD664F004DE2B0 /* MainViewController.xib */; };
+		27FC104521BD6978004DE2B0 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC104321BD6978004DE2B0 /* DiscoverViewController.swift */; };
+		27FC104621BD6978004DE2B0 /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FC104421BD6978004DE2B0 /* DiscoverViewController.xib */; };
+		27FC104921BD6D9E004DE2B0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC104821BD6D9E004DE2B0 /* TabBarViewController.swift */; };
+		27FC104B21BD6DB9004DE2B0 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC104A21BD6DB9004DE2B0 /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		27FC102521BD5E72004DE2B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27FC102821BD5E72004DE2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27FC102A21BD5E72004DE2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FC103321BD65F2004DE2B0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		27FC103421BD65F2004DE2B0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		27FC103A21BD6635004DE2B0 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		27FC103B21BD6635004DE2B0 /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		27FC103F21BD664F004DE2B0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		27FC104021BD664F004DE2B0 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		27FC104321BD6978004DE2B0 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		27FC104421BD6978004DE2B0 /* DiscoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
+		27FC104821BD6D9E004DE2B0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		27FC104A21BD6DB9004DE2B0 /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 		27FC101D21BD5E72004DE2B0 /* weibo */ = {
 			isa = PBXGroup;
 			children = (
+				27FC103021BD65B0004DE2B0 /* Class */,
 				27FC101E21BD5E72004DE2B0 /* AppDelegate.swift */,
 				27FC102021BD5E72004DE2B0 /* ViewController.swift */,
 				27FC102221BD5E72004DE2B0 /* Main.storyboard */,
@@ -62,6 +83,79 @@
 				27FC102A21BD5E72004DE2B0 /* Info.plist */,
 			);
 			path = weibo;
+			sourceTree = "<group>";
+		};
+		27FC103021BD65B0004DE2B0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				27FC103121BD65C3004DE2B0 /* View */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		27FC103121BD65C3004DE2B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27FC104721BD6D4D004DE2B0 /* Core */,
+				27FC103221BD65CC004DE2B0 /* Home */,
+				27FC103821BD660C004DE2B0 /* Discover */,
+				27FC103921BD6620004DE2B0 /* Message */,
+				27FC103E21BD663D004DE2B0 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27FC103221BD65CC004DE2B0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				27FC103321BD65F2004DE2B0 /* HomeViewController.swift */,
+				27FC103721BD65FA004DE2B0 /* view */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		27FC103721BD65FA004DE2B0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				27FC103421BD65F2004DE2B0 /* HomeViewController.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		27FC103821BD660C004DE2B0 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				27FC104321BD6978004DE2B0 /* DiscoverViewController.swift */,
+				27FC104421BD6978004DE2B0 /* DiscoverViewController.xib */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		27FC103921BD6620004DE2B0 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				27FC103A21BD6635004DE2B0 /* MessageViewController.swift */,
+				27FC103B21BD6635004DE2B0 /* MessageViewController.xib */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		27FC103E21BD663D004DE2B0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				27FC103F21BD664F004DE2B0 /* MainViewController.swift */,
+				27FC104021BD664F004DE2B0 /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		27FC104721BD6D4D004DE2B0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				27FC104821BD6D9E004DE2B0 /* TabBarViewController.swift */,
+				27FC104A21BD6DB9004DE2B0 /* NavViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +218,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				27FC102921BD5E72004DE2B0 /* LaunchScreen.storyboard in Resources */,
+				27FC104221BD664F004DE2B0 /* MainViewController.xib in Resources */,
+				27FC103D21BD6635004DE2B0 /* MessageViewController.xib in Resources */,
 				27FC102621BD5E72004DE2B0 /* Assets.xcassets in Resources */,
 				27FC102421BD5E72004DE2B0 /* Main.storyboard in Resources */,
+				27FC104621BD6978004DE2B0 /* DiscoverViewController.xib in Resources */,
+				27FC103621BD65F2004DE2B0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +236,12 @@
 			files = (
 				27FC102121BD5E72004DE2B0 /* ViewController.swift in Sources */,
 				27FC101F21BD5E72004DE2B0 /* AppDelegate.swift in Sources */,
+				27FC103C21BD6635004DE2B0 /* MessageViewController.swift in Sources */,
+				27FC104521BD6978004DE2B0 /* DiscoverViewController.swift in Sources */,
+				27FC104921BD6D9E004DE2B0 /* TabBarViewController.swift in Sources */,
+				27FC103521BD65F2004DE2B0 /* HomeViewController.swift in Sources */,
+				27FC104B21BD6DB9004DE2B0 /* NavViewController.swift in Sources */,
+				27FC104121BD664F004DE2B0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +378,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UK53EGXY3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.weibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +395,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UK53EGXY3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.weibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
