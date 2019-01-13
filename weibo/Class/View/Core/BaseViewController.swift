@@ -13,6 +13,8 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        let uesrLogin = UserLogin(frame: view.bounds)
+        view.addSubview(uesrLogin)
     }
     
     func setUI(){

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2762BC9F21DFBDE00018E633 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2762BC9E21DFBDE00018E633 /* BaseViewController.swift */; };
 		2762BCA221DFC14D0018E633 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2762BCA121DFC14D0018E633 /* CenterViewController.swift */; };
+		276ADE3721EBA9090024A45B /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ADE3621EBA9090024A45B /* UserLogin.swift */; };
 		27FC101F21BD5E72004DE2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC101E21BD5E72004DE2B0 /* AppDelegate.swift */; };
 		27FC102121BD5E72004DE2B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC102021BD5E72004DE2B0 /* ViewController.swift */; };
 		27FC102421BD5E72004DE2B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FC102221BD5E72004DE2B0 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		2762BC9E21DFBDE00018E633 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2762BCA121DFC14D0018E633 /* CenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		276ADE3621EBA9090024A45B /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		27FC101B21BD5E72004DE2B0 /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FC101E21BD5E72004DE2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27FC102021BD5E72004DE2B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 			path = Center;
 			sourceTree = "<group>";
 		};
+		276ADE3521EBA8DE0024A45B /* userLogin */ = {
+			isa = PBXGroup;
+			children = (
+				276ADE3621EBA9090024A45B /* UserLogin.swift */,
+			);
+			path = userLogin;
+			sourceTree = "<group>";
+		};
 		27FC101221BD5E71004DE2B0 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 		27FC103121BD65C3004DE2B0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				276ADE3521EBA8DE0024A45B /* userLogin */,
 				2762BCA021DFC1270018E633 /* Center */,
 				27FC104721BD6D4D004DE2B0 /* Core */,
 				27FC103221BD65CC004DE2B0 /* Home */,
@@ -333,6 +344,7 @@
 				27FC101F21BD5E72004DE2B0 /* AppDelegate.swift in Sources */,
 				27FC103C21BD6635004DE2B0 /* MessageViewController.swift in Sources */,
 				27FC104521BD6978004DE2B0 /* DiscoverViewController.swift in Sources */,
+				276ADE3721EBA9090024A45B /* UserLogin.swift in Sources */,
 				27FC104921BD6D9E004DE2B0 /* TabBarViewController.swift in Sources */,
 				2762BC9F21DFBDE00018E633 /* BaseViewController.swift in Sources */,
 				27FC103521BD65F2004DE2B0 /* HomeViewController.swift in Sources */,
