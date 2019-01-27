@@ -26,7 +26,7 @@ class UserLogin: UIView {
     lazy var tipLabel : UILabel = {
         let tipLabel = UILabel()
         tipLabel.text = "关注一些人，回来这里看看"
-        tipLabel.font = UIFont.systemFont(ofSize: 1)
+        tipLabel.font = UIFont.systemFont(ofSize: 14)
         tipLabel.textColor = UIColor.darkGray
         tipLabel.numberOfLines = 0
         tipLabel.sizeToFit()
@@ -42,9 +42,23 @@ class UserLogin: UIView {
         return loginBtn
     }()
     
+    func startAnimation(){
+        //1.创建动画
+        let anim = CABasicAnimation(keyPath: "transform.rotation")
+        //2.设置动画属性
+        anim.toValue = 2 * Double.pi
+        anim.duration = 20
+        anim.repeatCount = MAXFLOAT
+        //false下次再通过set方法设定动画属性时，将在此使用你的动画而非默认动画
+        anim.isRemovedOnCompletion = false
+        //添加动画
+        iconView.layer.add(anim, forKey: nil)
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUI()
+        startAnimation()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -57,7 +71,8 @@ extension UserLogin{
     func setUI() {
         //1.添加子控件
         self.addSubview(iconView)
-        //self.addSubview(registerBtn)
+        self.addSubview(tipLabel)
+        self.addSubview(registerBtn)
         self.addSubview(loginBtn)
         
         //2.界面布局
@@ -125,25 +140,17 @@ extension UserLogin{
 
         //registerBtn
         addConstraint(NSLayoutConstraint(item: registerBtn,
-                                         attribute: .right,
+                                         attribute: .left,
                                          relatedBy: .equal,
-                                         toItem: iconView,
-                                         attribute: .right,
-                                         multiplier: 1.0,
-                                         constant: 0))
-        
-        addConstraint(NSLayoutConstraint(item: registerBtn,
-                                         attribute: .right,
-                                         relatedBy: .equal,
-                                         toItem: iconView,
-                                         attribute: .right,
+                                         toItem: tipLabel,
+                                         attribute: .left,
                                          multiplier: 1.0,
                                          constant: 0))
 
         addConstraint(NSLayoutConstraint(item: registerBtn,
                                          attribute: .top,
                                          relatedBy: .equal,
-                                         toItem: iconView,
+                                         toItem: tipLabel,
                                          attribute: .bottom,
                                          multiplier: 1.0,
                                          constant: 30))
@@ -168,7 +175,7 @@ extension UserLogin{
         addConstraint(NSLayoutConstraint(item: loginBtn,
                                          attribute: .right,
                                          relatedBy: .equal,
-                                         toItem: iconView,
+                                         toItem: tipLabel,
                                          attribute: .right,
                                          multiplier: 1.0,
                                          constant: 0))
@@ -176,7 +183,7 @@ extension UserLogin{
         addConstraint(NSLayoutConstraint(item: loginBtn,
                                          attribute: .top,
                                          relatedBy: .equal,
-                                         toItem: iconView,
+                                         toItem: tipLabel,
                                          attribute: .bottom,
                                          multiplier: 1.0,
                                          constant: 30))
@@ -196,5 +203,7 @@ extension UserLogin{
                                          attribute: .notAnAttribute,
                                          multiplier: 1.0,
                                          constant: 30))
+        
+        //阴影图层VFL
     }
 }
